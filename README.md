@@ -8,7 +8,7 @@ Pull requests and issue reports are accepted and encouraged as well as requests.
 
 ## Installation 
 
-The following commands clone the repo to your Raspberry Pi and then run `install-scripts.sh` to install the scripts in the `master` branch directly to the proper directories in the `RetroPie-Setup/` folder.
+The following commands clone the repo to your Raspberry Pi, ODroid C1/C2, or PC and then run `install-scripts.sh` to install the scripts in the `master` branch directly to the proper directories in the `RetroPie-Setup/` folder.
 
 ```bash
 cd ~
