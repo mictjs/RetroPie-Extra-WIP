@@ -15,7 +15,7 @@ rp_module_licence="GPL2 https://raw.githubusercontent.com/chocolate-doom/chocola
 rp_module_help="Please add your iWAD files to $romdir/ports/doom/ and reinstall $md_id to create entries for each game to EmulationStation. Run 'chocolate-doom-setup' to configure your controls and options."
 rp_module_repo="git https://github.com/chocolate-doom/chocolate-doom.git master"
 rp_module_section="exp"
-rp_module_flags="!mali"
+rp_module_flags="!x86 !mali"
 
 function depends_chocolate-doom() {
     getDepends libsdl2-dev libsdl2-net-dev libsdl2-mixer-dev libsamplerate0-dev libpng-dev python-pil automake autoconf
