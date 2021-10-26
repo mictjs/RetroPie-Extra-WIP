@@ -13,15 +13,16 @@ rp_module_id="chocolate-doom"
 rp_module_desc="Chocolate Doom - Enhanced port of the official DOOM source"
 rp_module_licence="GPL2 https://raw.githubusercontent.com/chocolate-doom/chocolate-doom/sdl2-branch/COPYING"
 rp_module_help="Please add your iWAD files to $romdir/ports/doom/ and reinstall $md_id to create entries for each game to EmulationStation. Run 'chocolate-doom-setup' to configure your controls and options."
+rp_module_repo="git https://github.com/chocolate-doom/chocolate-doom.git master"
 rp_module_section="exp"
-rp_module_flags="!mali !x86"
+rp_module_flags="!mali"
 
 function depends_chocolate-doom() {
     getDepends libsdl2-dev libsdl2-net-dev libsdl2-mixer-dev libsamplerate0-dev libpng-dev python-pil automake autoconf
 }
 
 function sources_chocolate-doom() {
-    gitPullOrClone "$md_build" https://github.com/chocolate-doom/chocolate-doom.git
+    gitPullOrClone
 }
 
 function build_chocolate-doom() {
