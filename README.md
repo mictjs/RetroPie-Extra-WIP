@@ -63,6 +63,7 @@ I haven't worked that out yet. If you have, drop me a line.
 - [X] - `gearboy.sh` - Gameboy emulator - **Tested and works well.**
 - [X] - `pico8.sh` - Fantasy Game Emulator - Adds as a new system in RetroPie so you can directly launch carts.
 - [X] - `pokemini.sh` - Pokemon Mini emulator - **Tested and works well.**
+- [X] - `supermodel.sh` - Arcade Sega Model 3 emulator - **Tested and works well.**
 
 #### Libretrocores
 
@@ -83,24 +84,24 @@ I haven't worked that out yet. If you have, drop me a line.
 - [X] - `lr-gearboy.sh` - Yet another Game Boy (Color) emulator - Gearboy port for libretro. - **Tested and works well.**
 - [X] - `lr-gearcoleco.sh` - ColecoVision emulator - GearColeco port for libretro. - **Tested and works well.**
 - [X] - `lr-lutro.sh` - Lua engine - lua game framework (WIP) for libretro following the LÖVE API. - **Tested and works well.**
-- [X] - `lr-melonds.sh` - NDS emu - MelonDS port for libretro. - Tested and works
+- [X] - `lr-melonds.sh` - NDS emu - MelonDS port for libretro. - Tested and works.
 - [X] - `lr-mesen-s.sh` - Yet another Super Nintendo emulator - Mesen-S port for libretro. - **Tested and works well (only for x86_64).**
 - [X] - `lr-minivmac.sh` - Macintosh Plus Emulator - Mini vMac port for libretro. - Tested and works... sorta :\
 - [X] - `lr-mu.sh` - Palm OS emu - Mu port for libretro. - **Tested and works.**
 - [X] - `lr-oberon.sh` - Oberon RISC machine emulator for libretro. - It works.
 - [X] - `lr-openlara.sh` - Tomb Raider engine - OpenLara port for libretro. - **Tested and works well.**
 - [X] - `lr-play.sh` - PlayStation 2 emulator - Play port for libretro. - Experimental (only for x86_64)
-- [X] - `lr-potator.sh` - . - 
-- [X] - `lr-race.sh` - . - 
-- [X] - `lr-reminiscence.sh` - . - 
-- [X] - `lr-sameboy.sh` - . - 
-- [X] - `lr-simcoupe.sh` - . - 
-- [X] - `lr-thepowdertoy.sh` - . - 
-- [X] - `lr-uzem.sh` - . - 
-- [X] - `lr-vemulator.sh` - . - 
-- [X] - `lr-vitaquake2.sh` - . - 
-- [X] - `lr-vitaquake3.sh` - . - 
-- [X] - `lr-vitavoyager.sh` - . - 
+- [X] - `lr-potator.sh` - Watara Supervision emulator based on Normmatt version - Potator port for libretro. - **Tested and works well.**
+- [X] - `lr-race.sh` - Yet another Neo Geo Pocket (Color) emulator - RACE-NGPC-Emulator-PSP port for libretro.. - **Tested and works well.**
+- [X] - `lr-reminiscence.sh` - Flashback engine - Gregory Montoir’s Flashback emulator port for libretro. - Tested and works.
+- [X] - `lr-sameboy.sh` - Yet another Game Boy (Color) emulator - SameBoy Port for libretro. - **Tested and works well.**
+- [X] - `lr-simcoupe.sh` - SAM Coupe emulator - SimCoupe port for libretro. - **Tested and works well.**
+- [X] - `lr-thepowdertoy.sh` - Sandbox physics game for libretro. - **Tested and works well.**
+- [X] - `lr-uzem.sh` - Uzebox engine - Uzem port for libretro. - **Tested and works well.**
+- [X] - `lr-vemulator.sh` - SEGA Visual Memory Unit emulator - VeMUlator port for libretro. - **Tested and works well.**
+- [X] - `lr-vitaquake2.sh` - Quake 2 engine - vitaQuake II port for libretro. - **Tested and works (MODS crash after game presentation video).**
+- [X] - `lr-vitaquake3.sh` - Quake 3 engine - vitaQuake III port for libretro. - **Tested and works.**
+- [X] - `lr-vitavoyager.sh` - Star Trek Voyager Elite Force Holomatch engine - Lilium Voyager (fork of ioquake3) port for libretro. - It loads, but, with Black Screen.
 
 
 #### Ports
@@ -115,9 +116,7 @@ I haven't worked that out yet. If you have, drop me a line.
 
 #### Supplementary
 
-- [X] - `fun-facts-splashscreens.sh` - Set up some loading splashscreens with fun facts.
-- [X] - `joystick-selection.sh` - Set controllers for RetroArch players 1-4.
-- [X] - `screenshot.sh` - Take screenshots remotely through SSH - **Tested and works well.**
+- [X] - `mame-tools` - This package provides tools to be used with MAME or to be used with other emulators, like CHDMAN tools that is a CD/AVI converter to CHD format. - **Tested and works well.**
 
 ### Future To-Do List 
 
