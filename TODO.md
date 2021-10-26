@@ -8,5 +8,5 @@ This is just meant as a scratchpad for me to keep track of various ideas and req
 - [ ] rpcs3 (PS3 emulator) - https://github.com/RPCS3/rpcs3.git
 - [ ] ruffle (Adobe Flash Player emulator written in the Rust programming language) - https://github.com/ruffle-rs/ruffle.git
 - [ ] tsugaru (FM Towns emulator - https://github.com/captainys/TOWNSEMU.git
-- [ ] xemu (OG Xbox emualator) - https://github.com/mborgerson/xemu.git
+- [ ] xemu (OG Xbox emulator) - https://github.com/mborgerson/xemu.git
 - [ ] yuzu (Nintendo Switch emulator) - https://github.com/yuzu-emu/yuzu-mainline.git
