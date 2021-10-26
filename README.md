@@ -61,22 +61,14 @@ I haven't worked that out yet. If you have, drop me a line.
 #### Emulators
 
 - [X] - `gearboy.sh` - Gameboy emulator - **Tested and works well.**
-- [X] - `kat5200.sh` - Atari 8-bit/5200 emulator - **Only set up for 5200 at the moment.**
-- [X] - `mpv.sh` - Video Player - Not an actual emulator but allows you to play movies and tv shows from new systems in RetroPie.
-- [X] - `openbor.sh` - Beat 'em Up Game Engine (newest version) - **Tested only on Pi4 so far, installs as a system instead of as a port, direct launching of games from emulationstation supported!**
 - [X] - `pico8.sh` - Fantasy Game Emulator - Adds as a new system in RetroPie so you can directly launch carts.
 - [X] - `pokemini.sh` - Pokemon Mini emulator - **Tested and works well.**
 
 #### Libretrocores
 
-- [X] - `lr-bsnes.sh` - bsnes core for libretro with added SGB support.
 - [X] - `lr-daphne.sh` - Daphne port to libretro - laserdisk arcade games.
-- [X] - `lr-fceumm-mod.sh` - Modified fceumm core to specifically support the Super Mario Bros 1/3 hack.
 - [X] - `lr-freej2me.sh` - A J2ME implementation for old JAVA phone games.
-- [X] - `lr-mame2003_midway.sh` - MAME 0.78 core with Midway games optimizations.
 - [X] - `lr-mess-jaguar.sh` - Add support for using lr-mess for Jaguar games, uses atarijaguar system name to match lr-virtualjaguar.
-- [X] - `lr-pocketcdg.sh` - A MP3 karaoke music player.
-- [X] - `lr-prboom-system.sh` - For setting up DOOM as an emulated system, not a port.
 
 #### Ports
 
