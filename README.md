@@ -66,7 +66,12 @@ I haven't worked that out yet. If you have, drop me a line.
 
 #### Libretrocores
 
-- [X] - `lr-daphne.sh` - Daphne port to libretro - laserdisk arcade games.
+- [X] - `lr-2048.sh` - 2048 engine - 2048 port for libretro. - **Tested and works well.**
+- [X] - `lr-bk.sh` - Elektronika БК-0010/0011/Terak 8510a emulator - BK port for libretro. - **Tested and works.**
+- [X] - `lr-blastem.sh` - yet another Sega Genesis/Megadrive emulator - BlastEm port for libretro- **Tested and works.**
+- [X] - `lr-boom3.sh` - Doom 3 engine - dhewm3 port for libretro - **Tested and works (only for PC 64 bits).**
+- [X] - `lr-canary.sh` - 3DS emulator - Citra Canary for libretro.
+- [X] - `lr-daphne.sh` - Arcade LaserDisc - Daphne port to libretro. - Not Works :(
 - [X] - `lr-freej2me.sh` - A J2ME implementation for old JAVA phone games. **Tested and works.**
 - [X] - `lr-mess-jaguar.sh` - Add support for using lr-mess for Jaguar games, uses atarijaguar system name to match lr-virtualjaguar.
 
