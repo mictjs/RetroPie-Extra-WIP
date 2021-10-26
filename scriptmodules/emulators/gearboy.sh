@@ -12,6 +12,7 @@
 rp_module_id="gearboy"
 rp_module_desc="Gearboy - Gameboy & Gameboy Color Emulator"
 rp_module_licence="GPL3 https://raw.githubusercontent.com/drhelius/Gearboy/master/LICENSE"
+rp_module_licence="git https://github.com/DrHelius/GearBoy.git master"
 rp_module_section="exp"
 rp_module_flags="!x86 !mali"
 
@@ -25,7 +26,7 @@ function depends_gearboy() {
 }
 
 function sources_gearboy() {
-    gitPullOrClone "$md_build" https://github.com/DrHelius/GearBoy.git
+    gitPullOrClone 
 }
 
 function build_gearboy() {
