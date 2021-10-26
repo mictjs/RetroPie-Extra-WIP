@@ -1,4 +1,4 @@
-Focused on the latest version of Ubuntu
+Focused on the latest versions of Ubuntu
 
 # RetroPie-Extra-WIP
 
@@ -68,12 +68,40 @@ I haven't worked that out yet. If you have, drop me a line.
 
 - [X] - `lr-2048.sh` - 2048 engine - 2048 port for libretro. - **Tested and works well.**
 - [X] - `lr-bk.sh` - Elektronika БК-0010/0011/Terak 8510a emulator - BK port for libretro. - **Tested and works.**
-- [X] - `lr-blastem.sh` - yet another Sega Genesis/Megadrive emulator - BlastEm port for libretro- **Tested and works.**
-- [X] - `lr-boom3.sh` - Doom 3 engine - dhewm3 port for libretro - **Tested and works (only for PC 64 bits).**
-- [X] - `lr-canary.sh` - 3DS emulator - Citra Canary for libretro.
+- [X] - `lr-blastem.sh` - yet another Sega Genesis/Megadrive emulator - BlastEm port for libretro. - **Tested and works.**
+- [X] - `lr-boom3.sh` - Doom 3 engine - dhewm3 port for libretro - **Tested and works (only for x86_64).**
+- [X] - `lr-canary.sh` - 3DS emulator - Citra Canary for libretro. - Experimental (only for x86_64).
+- [X] - `lr-cannonball.sh` - An Enhanced OutRun engine for libretro. - **Tested and works well.**
+- [X] - `lr-chailove.sh` - 2D Game Framework with ChaiScript roughly inspired by the LÖVE API to libretro. - **Tested and works well.**
+- [X] - `lr-citra.sh` - 3DS emulator - Citra for libretro. **Tested and works (only for x86_64).**
+- [X] - `lr-craft.sh` - Minecraft engine - Craft port for libretro. - **Tested and works well.**
+- [X] - `lr-crocods.sh` - Amstrad CPC emu - CrocoDS port for libretro. - **Tested and works.**
 - [X] - `lr-daphne.sh` - Arcade LaserDisc - Daphne port to libretro. - Not Works :(
+- [X] - `lr-easyrpg.sh` - RPG Maker 2000/2003 engine - EasyRPG Player interpreter port for libretro. - **Tested and works well.**
+- [X] - `lr-ecwolf.sh` - Wolfestein 3D engine - ECWolf port based of Wolf4SDL for libretro. - **Tested and works well (only for x86_64).**
 - [X] - `lr-freej2me.sh` - A J2ME implementation for old JAVA phone games. **Tested and works.**
-- [X] - `lr-mess-jaguar.sh` - Add support for using lr-mess for Jaguar games, uses atarijaguar system name to match lr-virtualjaguar.
+- [X] - `lr-gearboy.sh` - Yet another Game Boy (Color) emulator - Gearboy port for libretro. - **Tested and works well.**
+- [X] - `lr-gearcoleco.sh` - ColecoVision emulator - GearColeco port for libretro. - **Tested and works well.**
+- [X] - `lr-lutro.sh` - Lua engine - lua game framework (WIP) for libretro following the LÖVE API. - **Tested and works well.**
+- [X] - `lr-melonds.sh` - NDS emu - MelonDS port for libretro. - Tested and works
+- [X] - `lr-mesen-s.sh` - Yet another Super Nintendo emulator - Mesen-S port for libretro. - **Tested and works well (only for x86_64).**
+- [X] - `lr-minivmac.sh` - Macintosh Plus Emulator - Mini vMac port for libretro. - Tested and works... sorta :\
+- [X] - `lr-mu.sh` - Palm OS emu - Mu port for libretro. - **Tested and works.**
+- [X] - `lr-oberon.sh` - Oberon RISC machine emulator for libretro. - It works.
+- [X] - `lr-openlara.sh` - Tomb Raider engine - OpenLara port for libretro. - **Tested and works well.**
+- [X] - `lr-play.sh` - PlayStation 2 emulator - Play port for libretro. - Experimental (only for x86_64)
+- [X] - `lr-potator.sh` - . - 
+- [X] - `lr-race.sh` - . - 
+- [X] - `lr-reminiscence.sh` - . - 
+- [X] - `lr-sameboy.sh` - . - 
+- [X] - `lr-simcoupe.sh` - . - 
+- [X] - `lr-thepowdertoy.sh` - . - 
+- [X] - `lr-uzem.sh` - . - 
+- [X] - `lr-vemulator.sh` - . - 
+- [X] - `lr-vitaquake2.sh` - . - 
+- [X] - `lr-vitaquake3.sh` - . - 
+- [X] - `lr-vitavoyager.sh` - . - 
+
 
 #### Ports
 
