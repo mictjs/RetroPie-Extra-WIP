@@ -29,7 +29,7 @@ sudo ./retropie_setup.sh
 
 ## Updating
 
-The following commands update your Raspberry Pi to the latest repo and then run `install-scripts.sh` to install the scripts in the `master` branch directly to the proper directories in the `RetroPie-Setup/` folder.
+The following commands update your Raspberry Pi, ODroid C1/C2, or PC to the latest repo and then run `install-scripts.sh` to install the scripts in the `master` branch directly to the proper directories in the `RetroPie-Setup/` folder.
 
 ```bash
 cd ~
