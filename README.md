@@ -35,7 +35,7 @@ The following commands update your Raspberry Pi to the latest repo and then run 
 
 ```bash
 cd ~
-cd RetroPie-Extra/
+cd RetroPie-Extra-WIP/
 git pull origin
 ./install-extras.sh
 ```
