@@ -10,7 +10,7 @@
 #
 
 rp_module_id="lr-daphne"
-rp_module_desc="lr-daphne - Daphne port for libretro - laserdisk games"
+rp_module_desc="Arcade LaserDisc emulator - Daphne port for libretro."
 rp_module_help="ROM Extension: .zip\n\nCopy your Daphne roms to $romdir/daphne. See readme file for directory structure."
 rp_module_licence="NONCOM https://raw.githubusercontent.com/libretro/daphne/master/docs/mame.txt"
 rp_module_section="exp"
@@ -37,8 +37,9 @@ function install_lr-daphne() {
 }
 
 function configure_lr-daphne() {
-    mkRomDir "$romdir/daphne"
+    mkRomDir "daphne"
+    ensureSystemretroconfig "daphne"
 
     addEmulator 0 "$md_id" "daphne" "$md_inst/daphne_libretro.so" 
-    addSystem "daphne" "Daphne" ".zip"
+    addSystem "daphne"
 }
