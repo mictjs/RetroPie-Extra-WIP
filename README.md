@@ -20,7 +20,7 @@ The installation script assumes that you are running it on a Raspberry Pi, ODroi
 
 ## Usage
 
-After installing **RetroPie-Extra**, the extra scripts will be installed directly in the **RetroPie Setup script** (generally in the experimental section), which you can run from either the command line or from the menu within Emulation Station.
+After installing **RetroPie-Extra-WIP**, the extra scripts will be installed directly in the **RetroPie Setup script** (generally in the experimental section), which you can run from either the command line or from the menu within Emulation Station.
 ```
 cd ~
 cd RetroPie-Setup/
