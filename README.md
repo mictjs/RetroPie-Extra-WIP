@@ -67,7 +67,7 @@ I haven't worked that out yet. If you have, drop me a line.
 
 - [X] - `lr-2048.sh` - 2048 engine - 2048 port for libretro. - **Tested and works well.**
 - [X] - `lr-bk.sh` - Elektronika БК-0010/0011/Terak 8510a emulator - BK port for libretro. - **Tested and works.**
-- [X] - `lr-blastem.sh` - yet another Sega Genesis/Megadrive emulator - BlastEm port for libretro. - **Tested and works.**
+- [X] - `lr-blastem.sh` - Yet another Sega Genesis/Megadrive emulator - BlastEm port for libretro. - **Tested and works.**
 - [X] - `lr-boom3.sh` - Doom 3 engine - dhewm3 port for libretro - **Tested and works (only for x86_64).**
 - [X] - `lr-canary.sh` - 3DS emulator - Citra Canary for libretro. - Experimental (only for x86_64).
 - [X] - `lr-cannonball.sh` - An Enhanced OutRun engine for libretro. - **Tested and works well.**
@@ -114,7 +114,7 @@ I haven't worked that out yet. If you have, drop me a line.
 
 #### Supplementary
 
-- [X] - `mame-tools` - This package provides tools to be used with MAME or to be used with other emulators, like CHDMAN tools that is a CD/AVI converter to CHD format. - **Tested and works well.**
+- [X] - `mame-tools` - This package provides tools to be used with MAME or to be used with other emulators, like CHDMAN tools that is a CD/AVI converter to CHD format. - **Tested and works well (WIP).**
 
 ### Future To-Do List 
 
