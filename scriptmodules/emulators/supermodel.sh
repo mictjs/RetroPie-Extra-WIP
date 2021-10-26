@@ -12,7 +12,7 @@
 rp_module_id="supermodel"
 rp_module_desc="Sega Model 3 Arcade emulator (v0.3-WIP)"
 rp_module_help="ROM Extensions: .zip\n\nCopy your Model 3 roms to $romdir/model3"
-rp_module_licence="GPL3 http://svn.code.sf.net/p/model3emu/code/trunk/Docs/LICENSE.txt"
+rp_module_licence="GPL3 https://sourceforge.net/p/model3emu/code/HEAD/tree/trunk/Docs/LICENSE.txt"
 rp_module_section="exp"
 rp_module_flags="sdl2"
 
