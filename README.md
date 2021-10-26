@@ -67,7 +67,7 @@ I haven't worked that out yet. If you have, drop me a line.
 #### Libretrocores
 
 - [X] - `lr-daphne.sh` - Daphne port to libretro - laserdisk arcade games.
-- [X] - `lr-freej2me.sh` - A J2ME implementation for old JAVA phone games.
+- [X] - `lr-freej2me.sh` - A J2ME implementation for old JAVA phone games. **Tested and works.**
 - [X] - `lr-mess-jaguar.sh` - Add support for using lr-mess for Jaguar games, uses atarijaguar system name to match lr-virtualjaguar.
 
 #### Ports
@@ -75,7 +75,7 @@ I haven't worked that out yet. If you have, drop me a line.
 - [X] - `chocolate-doom`.sh - DOOM source port - **Tested and works well.**
 - [X] - `crispy-doom.sh` - DOOM source port - **Tested and works well.**
 - [X] - `easyrpg-player.sh` - RPG Maker 2000/2003 interpreter - **Tested and works well.**
-- [X] - `reminiscence.sh` - Flashback engine clone - **Tested and works well. **
+- [X] - `reminiscence.sh` - Flashback engine clone - **Tested and works well.**
 - [X] - `sm64ex.sh` - Super Mario 64 PC Port for Pi4 - Works extremely well on Pi 4.
 - [X] - `wizznic.sh` - Puzznic clone - **Tested and works well.**
 - [X] - `zeldansq.sh` - Zelda: Navi's Quest fangame - **Tested and works well.**
@@ -97,10 +97,3 @@ I've moved this over to the [TODO.md](/TODO.md) file.
 - [X] - Oricutron - Oric 1/Oric Atmos emulator.
 - [X] - sdltrs - Radio Shack TRS-80 Model I/III/4/4P emulator.
 - [X] - ti99sim - Texas Instruments 99A emulator.
-
-## Contact Info / Additional Information
-
-- **Twitter**: [@zerojay](https://twitter.com/zerojay) - Often posting new information and additions from the repository to the #retropie hashtag.  
-- **IRC**: zerojay on irc.freenode.net, #retropie/#retropie-extra.
-
-If you wish to be up-to-date about all the changes happening to the repository as they happen, feel free to join the #retropie-extra channel on **Freenode**.
