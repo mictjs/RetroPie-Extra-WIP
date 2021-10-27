@@ -114,7 +114,7 @@ I haven't worked that out yet. If you have, drop me a line.
 
 #### Supplementary
 
-- [X] - `mame-tools` - This package provides tools to be used with MAME or to be used with other emulators, like CHDMAN tools that is a CD/AVI converter to CHD format. - **Tested and works well (WIP).**
+- [X] - `mame-tools.sh` - This package provides tools to be used with MAME or to be used with other emulators, like CHDMAN tools that is a CD/AVI converter to CHD format. - **Tested and works well (WIP).**
 
 ### Future To-Do List 
 
