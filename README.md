@@ -75,7 +75,6 @@ I haven't worked that out yet. If you have, drop me a line.
 - [X] - `lr-citra.sh` - 3DS emulator - Citra for libretro. **Tested and works (only for x86_64).**
 - [X] - `lr-craft.sh` - Minecraft engine - Craft port for libretro. - **Tested and works well.**
 - [X] - `lr-crocods.sh` - Amstrad CPC emu - CrocoDS port for libretro. - **Tested and works.**
-- [X] - `lr-daphne.sh` - Arcade LaserDisc - Daphne port to libretro. - Not Works :(
 - [X] - `lr-easyrpg.sh` - RPG Maker 2000/2003 engine - EasyRPG Player interpreter port for libretro. - **Tested and works well.**
 - [X] - `lr-ecwolf.sh` - Wolfestein 3D engine - ECWolf port based of Wolf4SDL for libretro. - **Tested and works well (only for x86_64).**
 - [X] - `lr-freej2me.sh` - A J2ME implementation for old JAVA phone games. **Tested and works.**
