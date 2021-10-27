@@ -11,7 +11,7 @@
 
 rp_module_id="lr-chailove"
 rp_module_desc="2D Game Framework with ChaiScript roughly inspired by the LÖVE API to libretro"
-rp_module_help="ROM Extension: .chai .chailove\n\nCopy your ChaiLove games to $romdir/ports/chailove"
+rp_module_help="ROM Extension: .chai .chailove\n\nCopy your ChaiLove games to $romdir/love"
 rp_module_licence="MIT https://raw.githubusercontent.com/libretro/libretro-chailove/master/COPYING"
 rp_module_repo="git https://github.com/libretro/libretro-chailove.git master"
 rp_module_section="exp"
@@ -34,40 +34,9 @@ function install_lr-chailove() {
 }
 
 function configure_lr-chailove() {
-    setConfigRoot "ports"
-
-    addPort "$md_id" "chailove" "ChaiLove" "$md_inst/chailove_libretro.so" 
-    local file="$romdir/ports/ChaiLove.sh"
-
-    cat >"$file" << _EOF_
-#!/bin/bash
-
-scriptdir="\$HOME/RetroPie-Setup"
-source "\$scriptdir/scriptmodules/helpers.sh"
-
-joy2keyStart
-let i=0 
-W=() 
-while read -r line; do
-    let i=\$i+1
-    W+=(\$i "\$line")
-done < <( ls -1 $romdir/ports/chailove )
-FILE=\$(dialog --title "List ROMS of directory $romdir/ports/chailove" --menu "Chose one ROM" 24 80 17 "\${W[@]%.*}" 3>&2 2>&1 1>&3)
-if [ "\$FILE" == "" ]; then
-    clear
-    joy2keyStop   #cancel and back to emulationstation
-else
-    joy2keyStop
-    item=\$((\$FILE*2-1)) 
-    "/opt/retropie/supplementary/runcommand/runcommand.sh" 0 _PORT_ "chailove" "$romdir/ports/chailove/\${W[\$item]}" #run the game
-fi
-
-#END
-_EOF_
-    chown $user:$user "$file"
-    chmod +x "$file"
-
-    mkRomDir "ports/chailove"
-
-    ensureSystemretroconfig "ports/chailove"
+    mkRomDir "love"
+    ensureSystemretroconfig "love"
+    
+    addEmulator 1 "$md_id" "love" "$md_inst/chailove_libretro.so"
+    addSystem "love"
 }
