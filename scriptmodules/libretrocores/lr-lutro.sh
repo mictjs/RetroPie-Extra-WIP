@@ -11,7 +11,7 @@
 
 rp_module_id="lr-lutro"
 rp_module_desc="Lua engine - lua game framework (WIP) for libretro following the LÖVE API"
-rp_module_help="ROM Extensions: .lutro .lua\n\nCopy your Lua Lutro games to $romdir/ports/lutro"
+rp_module_help="ROM Extensions: .lutro .lua\n\nCopy your Lua Lutro games to $romdir/lutro"
 rp_module_licence="GPL3 https://raw.githubusercontent.com/libretro/libretro-lutro/master/LICENSE"
 rp_module_repo="git https://github.com/libretro/libretro-lutro.git master"
 rp_module_section="exp"
@@ -34,40 +34,9 @@ function install_lr-lutro() {
 }
 
 function configure_lr-lutro() {
-    local script
-    setConfigRoot "ports"
-
-    addPort "$md_id" "lutro" "Lutro" "$md_inst/lutro_libretro.so"
-    local file="$romdir/ports/Lutro.sh"
-
-    cat >"$file" << _EOF_
-#!/bin/bash
-
-scriptdir="\$HOME/RetroPie-Setup"
-source "\$scriptdir/scriptmodules/helpers.sh"
-
-joy2keyStart
-let i=0 
-W=() 
-while read -r line; do
-    let i=\$i+1
-    W+=(\$i "\$line")
-done < <( ls -1 $romdir/ports/lutro )
-FILE=\$(dialog --title "List ROMS of directory $romdir/ports/lutro" --menu "Chose one ROM" 24 80 17 "\${W[@]%.*}" 3>&2 2>&1 1>&3)
-if [ "\$FILE" == "" ]; then
-    clear
-    joy2keyStop   #cancel and back to emulationstation
-else
-    joy2keyStop
-    item=\$((\$FILE*2-1)) 
-    "/opt/retropie/supplementary/runcommand/runcommand.sh" 0 _PORT_ "lutro" "$romdir/ports/lutro/\${W[\$item]}" #run the game
-fi
-
-#END
-_EOF_
-    chown $user:$user "$file"
-    chmod +x "$file"
-
-    mkRomDir "ports/lutro"
-    ensureSystemretroconfig "ports/lutro"
+    mkRomDir "lutro"
+    ensureSystemretroconfig "lutro"
+    
+    addEmulator 1 "$md_id" "lutro" "$md_inst/lutro_libretro.so"
+    addSystem "lutro"
 }
