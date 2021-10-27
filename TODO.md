@@ -2,7 +2,7 @@ This is just meant as a scratchpad for me to keep track of various ideas and req
 
 - [ ] cemu (Experimental emulator Wii U, using Wine) - https://cemu.info/
 - [ ] demul (Sega Dreamcast, NAOMI, NAOMI 2, Atomiswave, Hikaru, System SP, Gaelco PVR and Cave CV1000, using Wine) - http://demul.emulation64.com/
-- [ ] model2emu (Sega Model 2 emualtor, using Wine) - http://nebula.emulatronia.com/
+- [ ] model2emu (Sega Model 2 emulator, using Wine) - http://nebula.emulatronia.com/
 - [ ] picodrive (Sega PICO emulator) - https://github.com/notaz/picodrive.git
 - [ ] ryujinx (Nintendo Switch emulator) - https://github.com/Ryujinx/Ryujinx.git
 - [ ] rpcs3 (PS3 emulator) - https://github.com/RPCS3/rpcs3.git
