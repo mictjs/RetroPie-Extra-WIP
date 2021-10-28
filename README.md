@@ -58,9 +58,6 @@ I haven't worked that out yet. If you have, drop me a line.
 
 #### Emulators
 
-- [X] - `gearboy.sh` - Gameboy emulator - **Tested and works well.**
-- [X] - `pico8.sh` - Fantasy Game Emulator - Adds as a new system in RetroPie so you can directly launch carts.
-- [X] - `pokemini.sh` - Pokemon Mini emulator - **Tested and works well.**
 - [X] - `supermodel.sh` - Arcade Sega Model 3 emulator - **Tested and works well.**
 
 #### Libretrocores
@@ -100,16 +97,9 @@ I haven't worked that out yet. If you have, drop me a line.
 - [X] - `lr-vitaquake3.sh` - Quake 3 engine - vitaQuake III port for libretro. - **Tested and works.**
 - [X] - `lr-vitavoyager.sh` - Star Trek Voyager Elite Force Holomatch engine - Lilium Voyager (fork of ioquake3) port for libretro. - It loads, but, with Black Screen.
 
-
 #### Ports
 
-- [X] - `chocolate-doom`.sh - DOOM source port - **Tested and works well.**
-- [X] - `crispy-doom.sh` - DOOM source port - **Tested and works well.**
 - [X] - `easyrpg-player.sh` - RPG Maker 2000/2003 interpreter - **Tested and works well.**
-- [X] - `reminiscence.sh` - Flashback engine clone - **Tested and works well.**
-- [X] - `sm64ex.sh` - Super Mario 64 PC Port for Pi4 - Works extremely well on Pi 4.
-- [X] - `wizznic.sh` - Puzznic clone - **Tested and works well.**
-- [X] - `zeldansq.sh` - Zelda: Navi's Quest fangame - **Tested and works well.**
 
 #### Supplementary
 
