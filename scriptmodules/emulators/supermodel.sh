@@ -22,7 +22,7 @@ function depends_supermodel() {
 
 function sources_supermodel() {
     local revision="$1"
-    [[ -z "$revision" ]] && revision="862"
+    [[ -z "$revision" ]] && revision="863"
 
     svn checkout https://svn.code.sf.net/p/model3emu/code/trunk "$md_build" -r "$revision"
 }
@@ -51,13 +51,13 @@ function build_supermodel() {
     ln -s Makefiles/Makefile.UNIX Makefile
     make
     cd bin
-    cp -r "$home/RetroPie-Setup/scriptmodules/emulators/supermodel/NVRAM" "NVRAM"
+    cp -r "$scriptdir/scriptmodules/emulators/supermodel/NVRAM" "NVRAM"
     mkdir -p Config Saves
     cp ../Config/Supermodel.ini Config
     cp ../Config/Games.xml Config
     
     cd Config
-    way="/opt/retropie/emulators/supermodel/bin/Config"
+    way="$md_inst/bin/Config"
     if [[ -e $way/Supermodel.ini ]]; then
 	mv Supermodel.ini Supermodel.ini.rp-dist
     fi
