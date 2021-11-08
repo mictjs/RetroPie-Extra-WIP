@@ -5741,7 +5741,7 @@ function __aux_chdman_mame-tools(){
     local opt="$1"
     local format="$2"
     export IFS=$'\n'
-    __DIR=$(dialog --backtitle "$__backtitle" --stdout --title "Choose a ROM Directory ../*.{${format// /|}}" --dselect "$romdir/" 10 70)
+    __DIR=$(dialog --backtitle "$__backtitle" --stdout --title "Choose a ROM Directory ../*.{${format// /|}}" --dselect "$romdir/" 20 70)
     [ ! -z $__DIR ] && batch_"$opt"_chdman_mame-tools "$__DIR"
 }
 
@@ -5750,12 +5750,12 @@ function _aux_chdman_mame-tools() {
     local format="$2"
     export IFS=$'\n'
     if [[ "$opt" = "createhd" ]]; then
-        FILE=$(dialog --backtitle "$__backtitle" --default-item "$default" --stdout --cancel-label "No Input" --extra-button --extra-label "Back" --title "Choose a ROM *.{${format// /|}}" --fselect "$romdir/" 13 105)
+        FILE=$(dialog --backtitle "$__backtitle" --default-item "$default" --stdout --cancel-label "No Input" --extra-button --extra-label "Back" --title "Choose a ROM *.{${format// /|}}" --fselect "$romdir/" 20 105)
     
         [ $? = 1 ] && FILE="none"
         [ $FILE = "none" ] || [ -f "$FILE" ] && "$opt"_chdman_mame-tools "$FILE"
     else
-        FILE=$(dialog --backtitle "$__backtitle" --default-item "$default" --stdout --title "Choose a ROM *.{${format// /|}}" --fselect "$romdir/" 13 105)
+        FILE=$(dialog --backtitle "$__backtitle" --default-item "$default" --stdout --title "Choose a ROM *.{${format// /|}}" --fselect "$romdir/" 20 105)
     
         [ ! -z $FILE ] && [ -f "$FILE" ] && "$opt"_chdman_mame-tools "$FILE"
     fi
