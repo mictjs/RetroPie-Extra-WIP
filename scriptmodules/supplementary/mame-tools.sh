@@ -35,7 +35,7 @@ function build_mame-tools() {
     local params=(SOURCES=./src/mame/drivers/pacman.cpp SUBTARGET=pacman TOOLS=1 REGENIE=1)
     isPlatform "64bit" && params+=(PTR64=1)
     make clean
-    make "${params[@]}" -j`nproc` 
+    QT_SELECT=5 make "${params[@]}" -j`nproc` 
     rpSwap off
 }
 
@@ -412,7 +412,7 @@ function batch_convert_castool_mame-tools() {
 
         if [[ -e "$create" ]]; then
             sort -u $remove -o $remove && sort -u $create -o $create
-            dialog --backtitle "$__backtitle" --stdout --defaultno --yesno "Would you like to delete $aux_input files and keep only *.wav files?" 8 50
+            dialog --backtitle "$__backtitle" --stdout --defaultno --yesno "Would you like to delete $aux_input files and keeping only *.wav files?" 8 50
             if [[ $? = 0 ]]; then
                 xargs -d '\n' rm -f {} < $remove
                 dialog --backtitle "$__backtitle" --stdout --title "Removed files" --clear --textbox $remove 15 63
@@ -556,7 +556,7 @@ function convert_castool_mame-tools(){
 
         if [[ -f "$__output" ]]; then
             m="$input to ${__output##*/} successfully converted."
-            dialog --backtitle "$__backtitle" --stdout --defaultno --yesno "Would you like to delete $input and keep only ${__output##*/}?" 17 54
+            dialog --backtitle "$__backtitle" --stdout --defaultno --yesno "Would you like to delete $input and keeping only ${__output##*/}?" 17 54
             if [[ $? = 0 ]]; then
                 if [[ "${f}" = *.[zZ][iI][pP] ]] || [[ "${f}" = *.7[zZ] ]]; then
                     rm -rf "$enter" && rm -rf "$f"
@@ -1583,7 +1583,7 @@ function batch_extractld_chdman_mame-tools() {
 
         if [[ -e "$create" ]]; then
             sort -u $remove -o $remove && sort -u $create -o $create 
-            dialog --backtitle "$__backtitle" --stdout --defaultno --yesno "Would you like to delete $aux_input files and keep only *.avi files?" 8 50
+            dialog --backtitle "$__backtitle" --stdout --defaultno --yesno "Would you like to delete $aux_input files and keeping only *.avi files?" 8 50
             if [[ $? = 0 ]]; then
                 xargs -d '\n' rm -f {} < $remove
                 dialog --backtitle "$__backtitle" --stdout --title "Removed files" --clear --textbox $remove 15 63
@@ -1759,7 +1759,7 @@ function extractld_chdman_mame-tools(){
 
         if [[ -f "$__output" ]]; then
             m="$input to ${__output##*/} successfully converted."
-            dialog --backtitle "$__backtitle" --stdout --defaultno --yesno "Would you like to delete $input and keep only ${__output##*/}?" 17 54
+            dialog --backtitle "$__backtitle" --stdout --defaultno --yesno "Would you like to delete $input and keeping only ${__output##*/}?" 17 54
             if [[ $? = 0 ]]; then
                 if [[ "${f}" = *.[zZ][iI][pP] ]] || [[ "${f}" = *.7[zZ] ]]; then
                     rm -rf "$enter" && rm -rf "$f"
@@ -1958,7 +1958,7 @@ function batch_extractcd_chdman_mame-tools() {
 
         if [[ -e "$create" ]]; then
             sort -u $remove -o $remove && sort -u $create -o $create 
-            dialog --backtitle "$__backtitle" --stdout --defaultno --yesno "Would you like to delete $aux_input files and keep only *.$ext,*.bin${r} files?" 8 50
+            dialog --backtitle "$__backtitle" --stdout --defaultno --yesno "Would you like to delete $aux_input files and keeping only *.$ext,*.bin${r} files?" 8 50
             if [[ $? = 0 ]]; then
                 xargs -d '\n' rm -f {} < $remove
                 dialog --backtitle "$__backtitle" --stdout --title "Removed files" --clear --textbox $remove 15 63
@@ -2118,7 +2118,7 @@ function extractcd_chdman_mame-tools(){
 
         if [[ -f "$__output" ]]; then
             m="$input to ${__output##*/}${b}${r} successfully converted."
-            dialog --backtitle "$__backtitle" --stdout --defaultno --yesno "Would you like to delete $input and keep only ${__output##*/}${b}${r}?" 17 54
+            dialog --backtitle "$__backtitle" --stdout --defaultno --yesno "Would you like to delete $input and keeping only ${__output##*/}${b}${r}?" 17 54
             if [[ $? = 0 ]]; then
                 if [[ "${f}" = *.[zZ][iI][pP] ]] || [[ "${f}" = *.7[zZ] ]]; then
                     rm -rf "$enter" && rm -rf "$f"
@@ -2391,7 +2391,7 @@ function batch_extracthd_chdman_mame-tools() {
 
         if [[ -e "$create" ]]; then
             sort -u $remove -o $remove && sort -u $create -o $create 
-            dialog --backtitle "$__backtitle" --stdout --defaultno --yesno "Would you like to delete $aux_input files and keep only *.$ext files?" 8 50
+            dialog --backtitle "$__backtitle" --stdout --defaultno --yesno "Would you like to delete $aux_input files and keeping only *.$ext files?" 8 50
             if [[ $? = 0 ]]; then
                 xargs -d '\n' rm -f {} < $remove
                 dialog --backtitle "$__backtitle" --stdout --title "Removed files" --clear --textbox $remove 15 63
@@ -2594,7 +2594,7 @@ function extracthd_chdman_mame-tools(){
 
         if [[ -f "$__output" ]]; then
             m="$input to ${__output##*/} successfully converted."
-            dialog --backtitle "$__backtitle" --stdout --defaultno --yesno "Would you like to delete $input and keep only ${__output##*/}?" 17 54
+            dialog --backtitle "$__backtitle" --stdout --defaultno --yesno "Would you like to delete $input and keeping only ${__output##*/}?" 17 54
             if [[ $? = 0 ]]; then
                 if [[ "${f}" = *.[zZ][iI][pP] ]] || [[ "${f}" = *.7[zZ] ]]; then
                     rm -rf "$enter" && rm -rf "$f"
@@ -2807,7 +2807,7 @@ function batch_extractraw_chdman_mame-tools() {
 
         if [[ -e "$create" ]]; then
             sort -u $remove -o $remove && sort -u $create -o $create 
-            dialog --backtitle "$__backtitle" --stdout --defaultno --yesno "Would you like to delete $aux_input files and keep only *.raw files?" 8 50
+            dialog --backtitle "$__backtitle" --stdout --defaultno --yesno "Would you like to delete $aux_input files and keeping only *.raw files?" 8 50
             if [[ $? = 0 ]]; then
                 xargs -d '\n' rm -f {} < $remove
                 dialog --backtitle "$__backtitle" --stdout --title "Removed files" --clear --textbox $remove 15 63
@@ -3011,7 +3011,7 @@ function extractraw_chdman_mame-tools(){
 
         if [[ -f "$__output" ]]; then
             m="$input to ${__output##*/} successfully converted."
-            dialog --backtitle "$__backtitle" --stdout --defaultno --yesno "Would you like to delete $input and keep only ${__output##*/}?" 17 54
+            dialog --backtitle "$__backtitle" --stdout --defaultno --yesno "Would you like to delete $input and keeping only ${__output##*/}?" 17 54
             if [[ $? = 0 ]]; then
                 if [[ "${f}" = *.[zZ][iI][pP] ]] || [[ "${f}" = *.7[zZ] ]]; then
                     rm -rf "$enter" && rm -rf "$f"
@@ -3262,7 +3262,7 @@ function batch_createld_chdman_mame-tools() {
 
         if [[ -e "$create" ]]; then
             sort -u $remove -o $remove && sort -u $create -o $create
-            dialog --backtitle "$__backtitle" --stdout --defaultno --yesno "Would you like to delete $aux_input files and keep only *.chd files?" 8 50
+            dialog --backtitle "$__backtitle" --stdout --defaultno --yesno "Would you like to delete $aux_input files and keeping only *.chd files?" 8 50
             if [[ $? = 0 ]]; then
                 xargs -d '\n' rm -f {} < $remove
                 dialog --backtitle "$__backtitle" --stdout --title "Removed files" --clear --textbox $remove 15 63
@@ -3504,7 +3504,7 @@ function createld_chdman_mame-tools(){
 
         if [[ -f "$__output" ]]; then
             m="$input to ${__output##*/} successfully converted."
-            dialog --backtitle "$__backtitle" --stdout --defaultno --yesno "Would you like to delete $input and keep only ${__output##*/}?" 17 54
+            dialog --backtitle "$__backtitle" --stdout --defaultno --yesno "Would you like to delete $input and keeping only ${__output##*/}?" 17 54
             if [[ $? = 0 ]]; then
                 if [[ "${f}" = *.[zZ][iI][pP] ]] || [[ "${f}" = *.7[zZ] ]]; then
                     rm -rf "$aux_input" && rm -rf "$f"
@@ -3837,10 +3837,10 @@ function batch_createcd_chdman_mame-tools() {
         if [[ -e "$create" ]]; then
             sort -u $remove -o $remove && sort -u $create -o $create
             sort -u $remove_bins -o $remove_bins
-            dialog --backtitle "$__backtitle" --stdout --defaultno --yesno "Would you like to delete $aux_input (and *.bin) files and keep only *.chd files?" 8 50
+            dialog --backtitle "$__backtitle" --stdout --defaultno --yesno "Would you like to delete $aux_input (and *.bin) files and keeping only *.chd files?" 8 50
             if [[ $? = 0 ]]; then
                 xargs -d '\n' rm -f {} < $remove
-                xargs -d '\n' rm -f {} < $remove_bins
+                sed -i 's/\r$//g' $remove_bins && xargs -d '\n' rm -f {} < $remove_bins
                 dialog --backtitle "$__backtitle" --stdout --title "Removed bin files" --clear --textbox $remove_bins 15 63
                 dialog --backtitle "$__backtitle" --stdout --title "Removed input files" --clear --textbox $remove 15 63
                 dialog --backtitle "$__backtitle" --stdout --msgbox "$aux_input files have been deleted!" 8 50
@@ -4029,15 +4029,15 @@ function createcd_chdman_mame-tools(){
         fi
         chown $user:$user ${_ext[@]} ${_ext_aux[@]} 2>/dev/null
 
-        remove_bin="remove_bin.txt"
+        remove_bins="remove_bins.txt"
         if [[ "${aux_input}" == ${_ext[0]} ]]; then # CUE
             cat $aux_input |  awk '/.bin/ {print}' > 1.txt
-            sed 's/FILE "\|" BINARY//g' 1.txt > $remove_bin && rm -rf 1.txt 
+            sed 's/FILE "\|" BINARY//g' 1.txt > $remove_bins && rm -rf 1.txt 
         elif [[ "${aux_input}" == ${_ext[1]} ]]; then # GDI
             cat $aux_input | awk '{s=""; for (i=5; i<NF; i++) s = s $i; print s}' >> 1.txt 2>/dev/null
-            sed '/^$/d' 1.txt > $remove_bin && rm -rf 1.txt
+            sed '/^$/d' 1.txt > $remove_bins && rm -rf 1.txt
         elif [[ "${aux_input}" == ${_ext[2]} ]]; then
-            cat $aux_input | awk '/.bin/ {print}' > 1.txt && sed 's/DATAFILE "//g' 1.txt > 2.txt && sed 's/" .*$//' 2.txt > $remove_bin && rm -rf {1,2}.txt # TOC	    
+            cat $aux_input | awk '/.bin/ {print}' > 1.txt && sed 's/DATAFILE "//g' 1.txt > 2.txt && sed 's/" .*$//' 2.txt > $remove_bins && rm -rf {1,2}.txt # TOC	    
         fi 2>/dev/null >/dev/null	
 
         local params=()
@@ -4074,23 +4074,23 @@ function createcd_chdman_mame-tools(){
         fi
 
         if [[ -f "$__output" ]]; then
-            sort -u $remove_bin -o $remove_bin 
+            sort -u $remove_bins -o $remove_bins
             m="$input to ${__output##*/} successfully converted."
-            dialog --backtitle "$__backtitle" --stdout --defaultno --yesno "Would you like to delete $input (and your bins) and keep only ${__output##*/}?" 17 54
+            dialog --backtitle "$__backtitle" --stdout --defaultno --yesno "Would you like to delete $input (and your bins) and keeping only ${__output##*/}?" 17 54
             if [[ $? = 0 ]]; then
                 if [[ "${f}" = *.[zZ][iI][pP] ]] || [[ "${f}" = *.7[zZ] ]]; then
                     rm -rf "$aux_input" && rm -rf "$f"
                 else
                     rm -rf "$f"
                 fi
-                xargs -d '\n' rm -f {} < $remove_bin
-                dialog --backtitle "$__backtitle" --stdout --title "Removed bin files" --clear --textbox $remove_bin 15 63
+                sed -i 's/\r$//g' $remove_bins && xargs -d '\n' rm -f {} < $remove_bins
+                dialog --backtitle "$__backtitle" --stdout --title "Removed bin files" --clear --textbox $remove_bins 15 63
                 dialog --backtitle "$__backtitle" --stdout --clear --msgbox "$input has been deleted!" 17 54
             fi
         else
             m="ERROR: Conversion Failed."
         fi
-        rm -rf $remove_bin
+        rm -rf $remove_bins
     else
         m="$m"
     fi
@@ -4590,7 +4590,7 @@ function batch_createhd_chdman_mame-tools() {
 
         if [[ -e "$create" ]]; then
             sort -u $remove -o $remove && sort -u $create -o $create
-            dialog --backtitle "$__backtitle" --stdout --defaultno --yesno "Would you like to delete $aux_input files and keep only *.chd files?" 8 50
+            dialog --backtitle "$__backtitle" --stdout --defaultno --yesno "Would you like to delete $aux_input files and keeping only *.chd files?" 8 50
             if [[ $? = 0 ]]; then
                 xargs -d '\n' rm -f {} < $remove
                 dialog --backtitle "$__backtitle" --stdout --title "Removed files" --clear --textbox $remove 15 63
@@ -5089,7 +5089,7 @@ function createhd_chdman_mame-tools(){
         if [[ -f "$__output" ]]; then
             if [[ -n "$f" ]]; then
                 m="$input to ${__output##*/} successfully converted."
-                dialog --backtitle "$__backtitle" --stdout --defaultno --yesno "Would you like to delete $input and keep only ${__output##*/}?" 17 54
+                dialog --backtitle "$__backtitle" --stdout --defaultno --yesno "Would you like to delete $input and keeping only ${__output##*/}?" 17 54
                 if [[ $? = 0 ]]; then
                     if [[ "${f}" = *.[zZ][iI][pP] ]] || [[ "${f}" = *.7[zZ] ]]; then
                         rm -rf "$aux_input" && rm -rf "$f"
@@ -5345,7 +5345,7 @@ function batch_createraw_chdman_mame-tools() {
 
         if [[ -e "$create" ]]; then
             sort -u $remove -o $remove && sort -u $create -o $create
-            dialog --backtitle "$__backtitle" --stdout --defaultno --yesno "Would you like to delete original files and keep only *.chd files?" 8 50
+            dialog --backtitle "$__backtitle" --stdout --defaultno --yesno "Would you like to delete original files and keeping only *.chd files?" 8 50
             if [[ $? = 0 ]]; then
                 xargs -d '\n' rm -f {} < $remove
                 dialog --backtitle "$__backtitle" --stdout --title "Removed files" --clear --textbox $remove_show 15 63
@@ -5596,7 +5596,7 @@ function createraw_chdman_mame-tools(){
         fi
 
         if [[ -f "$__output" ]]; then
-            dialog --backtitle "$__backtitle" --stdout --defaultno --yesno "Would you like to delete $input and keep only ${__output##*/}?" 8 50
+            dialog --backtitle "$__backtitle" --stdout --defaultno --yesno "Would you like to delete $input and keeping only ${__output##*/}?" 8 50
             if [[ $? = 0 ]]; then
                 rm -rf "$f"
                 dialog --backtitle "$__backtitle" --stdout --msgbox "$input has been deleted!" 17 54
@@ -6835,7 +6835,7 @@ function aux_jedutil_convert_bin_mame-tools() {
         if [[ -f "${f%.*}.jed" ]]; then
             dialog --backtitle "$__backtitle" --stdout --title "Jedutil - ${f%.*}.jed map" --textbox ${f%.*}.jed 0 0
 	    m="conversion completed"
-            dialog --backtitle "$__backtitle" --stdout --defaultno --yesno "Would you like to delete $f file and keep only ${f%.*}.jed?" 13 50
+            dialog --backtitle "$__backtitle" --stdout --defaultno --yesno "Would you like to delete $f file and keeping only ${f%.*}.jed?" 13 50
             if [[ $? = 0 ]]; then
                 rm -rf "$f"
                 dialog --backtitle "$__backtitle" --stdout --msgbox "$f has been deleted!" 17 54
@@ -6902,7 +6902,7 @@ function aux_jedutil_convert_jedec_mame-tools() {
 
         if [[ -f "${f%.*}.bin" ]]; then
 	    m="conversion completed"
-            dialog --backtitle "$__backtitle" --stdout --defaultno --yesno "Would you like to delete $f file and keep only ${f%.*}.bin?" 13 50
+            dialog --backtitle "$__backtitle" --stdout --defaultno --yesno "Would you like to delete $f file and keeping only ${f%.*}.bin?" 13 50
             if [[ $? = 0 ]]; then
                 rm -rf "$f"
                 dialog --backtitle "$__backtitle" --stdout --msgbox "$f has been deleted!" 17 54
