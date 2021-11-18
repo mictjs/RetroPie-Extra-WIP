@@ -71,12 +71,11 @@ function _add_games_lr-ecwolf(){
         ['vswap.wl1']="Wolfenstein 3D (Demo)"
         ['vswap.wl6']="Wolfenstein 3D"
         ['vswap.sod']="Wolfenstein 3D - Spear of Destiny"
+        ['vswap.sd1']="Wolfenstein 3D - Spear of Destiny (Ep 1)"
         ['vswap.sd2']="Wolfenstein 3D - Spear of Destiny (Ep 2)"
         ['vswap.sd3']="Wolfenstein 3D - Spear of Destiny (Ep 3)"
         ['vswap.sdm']="Wolfenstein 3D - Spear of Destiny (Demo)"
         ['vswap.n3d']="Wolfenstein 3D - Super Noah’s Ark 3D"
-        ['vswap.sd2']="Wolfenstein 3D - SoD MP2 - Return to Danger"
-        ['vswap.sd3']="Wolfenstein 3D - SoD MP3 - Ultimate Challenge"
     )
     
     for game in "${!games[@]}"; do
